@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 
 namespace ProcessBudget
 {
@@ -17,10 +18,26 @@ namespace ProcessBudget
 
         public BudgetEntry(string date, string entryType, string category, string amount)
         {
-            Date = DateTime.Parse(date);
+            Date = ParseStringForDateTime(date);
             EntryType = entryType == EntryType.Income.ToString() ? EntryType.Income : EntryType.Expense;
             Category = category;
             Amount = double.Parse(amount);
+        }
+
+        private DateTime ParseStringForDateTime(string s)
+        {
+            DateTime date;
+
+            try
+            {
+                date = DateTime.Parse(s, CultureInfo.InvariantCulture, DateTimeStyles.AssumeLocal);
+            }
+            catch (FormatException)
+            {
+                date = DateTime.Parse(s, new CultureInfo("en-GB")); // My phone uses GB format.
+            }
+
+            return date;
         }
     }
 }

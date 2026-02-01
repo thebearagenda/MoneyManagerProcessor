@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ProcessBudget.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="OpenDirectory" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="SaveDirectory" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="BudgetCategories" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Mortgage, 839.65, AutoFill;HOA, 384, AutoFill;Gas, 80, Budgeted;Car Payment, 325.03, AutoFill;Auto Insurance, 239.33, AutoFill;Internet, 80, AutoFill;Phone, 75, AutoFill;Groceries, 400, BudgetedDecrement;Pet Groceries, 100, BudgetedDecrement;Electricity, 180, FillIfNotPresent;Gym, 72.42, AutoFill;Entertainment, 26.67, AutoFill;Dues, 15, AutoFill</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
